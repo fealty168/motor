@@ -61,7 +61,7 @@ with st.sidebar.expander("🧶 绕组参数", expanded=True):
         wire_dia = st.number_input("裸线径 (mm)", min_value=0.1, max_value=5.0, value=0.95) / 1000
         ins_dia = st.number_input("含漆层直径 (mm)", min_value=0.1, max_value=5.0, value=1.01) / 1000
         parallel_wires = st.number_input("并绕根数", min_value=1, max_value=100, value=10)
-        end_length = st.number_input("端部平均半匝长 (mm)", min_value=50, max_value=1000, value=341.45) / 1000
+        end_length = st.number_input("端部平均半匝长 (mm)", min_value=50.0, max_value=1000.0, value=341.45) / 1000
 
 with st.sidebar.expander("📊 材料与系数", expanded=True):
     col1, col2 = st.columns(2)
