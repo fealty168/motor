@@ -116,7 +116,7 @@ def calculate(p):
     # 每极磁通
     Phi = (2/math.pi) * Bg1 * tau * p['L']
     # 空载相反电势 (有效值)
-    E_ph = 4.44 * p['f'] * Nph * Phi * Kw
+    E_ph = 2.96 * p['f'] * Nph * Phi * Kw
     # 线反电势
     E_line = E_ph * math.sqrt(3)
 
