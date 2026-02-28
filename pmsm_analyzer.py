@@ -15,10 +15,10 @@ with st.sidebar.expander("⚡ 基本电气参数", expanded=True):
     col1, col2 = st.columns(2)
     with col1:
         P = st.number_input("额定功率 (kW)", min_value=0.1, max_value=1000.0, value=75.0)
-        V_ll = st.number_input("额定线电压 (V)", min_value=50, max_value=1000, value=380)
-        n = st.number_input("额定转速 (rpm)", min_value=100, max_value=20000, value=3000)
+        V_ll = st.number_input("额定线电压 (V)", min_value=50.0, max_value=1000.0, value=380.0)
+        n = st.number_input("额定转速 (rpm)", min_value=100.0, max_value=20000.0, value=3000.0)
     with col2:
-        f = st.number_input("额定频率 (Hz)", min_value=10, max_value=1000, value=200)
+        f = st.number_input("额定频率 (Hz)", min_value=10.0, max_value=1000.0, value=200.0)
         I_rated = st.number_input("额定电流 (A)", min_value=1.0, max_value=2000.0, value=122.0)
         poles = st.number_input("极数", min_value=2, max_value=48, value=8, step=2)
 
